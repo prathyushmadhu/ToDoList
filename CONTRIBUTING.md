@@ -12,12 +12,12 @@ To contribute to the To-Do List Web Application, please follow these steps:
 - Create a branch and switch to that branch.
 - Make your changes and enhancements to the code.
 - Test your changes locally to ensure they work as expected.
-- Commit your changes with descriptive commit messages:
+- Commit your changes with given commit message format:
 
 
 ```git add .```
 
-```git commit -m "<commit message>"```
+```git commit -m "issue <issue_number> fixed : <yourmailid@anymail.com>"```
 
 - Push your changes to your forked repository:
 

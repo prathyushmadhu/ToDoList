@@ -19,6 +19,8 @@ To contribute to the To-Do List Web Application, please follow these steps:
 
 ```git commit -m "issue <issue_number> fixed : <yourmailid@anymail.com>"```
 
+- Note : your next clue will be recieved in this mail id.
+
 - Push your changes to your forked repository:
 
 ```git push origin master```

@@ -16,6 +16,7 @@ To contribute to the To-Do List Web Application, please follow these steps:
 
 
 ```git add .```
+
 ```git commit -m "<commit message>"```
 
 - Push your changes to your forked repository:

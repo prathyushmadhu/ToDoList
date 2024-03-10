@@ -63,7 +63,6 @@
             const taskInput = document.getElementById('taskInput');
             const taskList = document.getElementById('taskList');
 
-            // you might need this... Therullada
             function createTaskItem(taskContent) {
                 const li = document.createElement('li');
                 li.textContent = taskContent;
@@ -71,6 +70,11 @@
                 const deleteBtn = document.createElement('button');
                 deleteBtn.textContent = 'Delete';
                 deleteBtn.className = 'delete-btn';
+
+                // Add event listener to delete button
+                deleteBtn.addEventListener('click', function() {
+                    li.remove();
+                });
 
                 li.appendChild(deleteBtn);
                 taskList.appendChild(li);

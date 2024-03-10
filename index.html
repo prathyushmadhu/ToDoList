@@ -63,7 +63,7 @@
             const taskInput = document.getElementById('taskInput');
             const taskList = document.getElementById('taskList');
 
-            // you might need this... Therullada
+            // Function to create a task item
             function createTaskItem(taskContent) {
                 const li = document.createElement('li');
                 li.textContent = taskContent;
@@ -72,10 +72,16 @@
                 deleteBtn.textContent = 'Delete';
                 deleteBtn.className = 'delete-btn';
 
+                // Event listener for delete button
+                deleteBtn.addEventListener('click', function() {
+                    li.remove(); // Remove the task item when the delete button is clicked
+                });
+
                 li.appendChild(deleteBtn);
                 taskList.appendChild(li);
             }
 
+            // Event listener for task input
             taskInput.addEventListener('keypress', function(event) {
                 if (event.key === 'Enter' && taskInput.value.trim() !== '') {
                     createTaskItem(taskInput.value);
